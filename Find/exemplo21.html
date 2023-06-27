@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The find() Method</h2>
+
+<p>find() returns the value of the first element in an array that passes a test (provided by a function):</p>
+
+<p id="demo"></p>
+
+<script>
+const ages = [3, 10, 18, 20];
+
+document.getElementById("demo").innerHTML = ages.find(checkAge);
+
+function checkAge(age) {
+  return age > 18;
+}
+</script>
+
+<p>The find() method is not supported in Internet Explorer 11 (or earlier).</p>
+
+</body>
+</html>
